@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="ro.pub.cs.systems.eim.practicaltest01var08.PracticalTest01Var08MainActivity">
+
+    <Button
+        android:id="@+id/navigate_to_secondary_activity_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:text="play"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="2">
+        <EditText
+            android:id="@+id/left_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:inputType="text"
+            android:ems="9"
+            android:gravity="center"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="@string/riddle"/>
+
+        <EditText
+            android:id="@+id/right_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:inputType="text"
+            android:ems="9"
+            android:gravity="center"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:text="@string/answer"/>
+
+
+    </GridLayout>
+
+</LinearLayout>

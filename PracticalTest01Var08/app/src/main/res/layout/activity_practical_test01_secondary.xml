@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="ro.pub.cs.systems.eim.practicaltest01var08.PracticalTest01Var08PlayActivity">
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="2">
+
+        <TextView
+            android:id="@+id/riddle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:layout_row="0"
+            android:layout_column="1"/>
+
+        <EditText
+            android:id="@+id/answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:inputType="text"
+            android:ems="9"
+            android:gravity="center"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:text="@string/answer"/>
+
+
+        <Button
+            android:id="@+id/press_me_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:text="@string/check"/>
+
+        <Button
+            android:id="@+id/press_me_too_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:text="@string/back"/>
+
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/riddle2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:gravity="center"
+        android:layout_row="0"
+        android:layout_column="0"/>
+
+
+</LinearLayout>
