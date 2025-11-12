@@ -93,6 +93,10 @@ public class PracticalTest01Var08MainActivity extends AppCompatActivity {
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         if (savedInstanceState.containsKey(Constants.Ans)) {
             leftEditText.setText(savedInstanceState.getString(Constants.Ans));
+            //Log.d("Restore", Objects.requireNonNull(savedInstanceState.getString(Constants.Ans)));
+           Log.d("Restore", Constants.Ans);
+           /// Log.d("Restore", savedInstanceState.getString(Constants.Ans));
+            //Log.d("Restore", global);
         }
     }
     public static String global;
@@ -107,6 +111,7 @@ public class PracticalTest01Var08MainActivity extends AppCompatActivity {
                 Log.d("Victory", ans);
             } else {
                 Toast.makeText(this, "Defeat", Toast.LENGTH_LONG).show();
+                Log.d("Defeat","Defeat");
             }
 
         }
@@ -121,6 +126,7 @@ public class PracticalTest01Var08MainActivity extends AppCompatActivity {
 
         }
     }
+
 
 
     protected void onResume() {
